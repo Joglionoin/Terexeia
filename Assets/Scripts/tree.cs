@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class tree : MonoBehaviour
 {
@@ -31,6 +31,10 @@ public class tree : MonoBehaviour
         else if (treeHealth <= PlayerStat.initPlayerAttack)
         {
             PlayerStat.DropItem("Wood");
+            if (gameObject == GameObject.Find("tree2"))
+            {
+                SceneManager.LoadScene(4);
+            }
             gameObject.SetActive(false);
         }
         PlayerStat.DamageTaken(treeDmg);
