@@ -3,4 +3,6 @@
 
 
 
-basically fake terraria
+
+High Scores:
+{submit high scores for display}
